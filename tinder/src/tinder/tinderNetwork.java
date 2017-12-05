@@ -61,9 +61,14 @@ public class tinderNetwork
 	
 	public void addLink(User v1, User v2, Link initialLink)
 	{
+		final double toKM = 6371;
+		final double kmToMiles = 0.621371;
 		double lat1 = v1.getLatitude(), lat2 = v2.getLatitude(), long1 = v1.getLongitude(), long2 = v2.getLongitude();
-		double deltaLat = lat1 - lat2, deltaLong = long1 - long2;
-		double dist = Math.sqrt(Math.pow(deltaLat, 2) + Math.pow(deltaLong, 2));
+		double latRad1 = Math.toRadians(lat1), latRad2 = Math.toRadians(lat2);
+		double deltaLat = Math.toRadians(lat1 - lat2), deltaLong = Math.toRadians(long1 - long2);
+		double a = Math.sin(deltaLat/2) * Math.sin(deltaLat/2) + Math.cos(latRad1) * Math.cos(latRad2) *Math.sin(deltaLong/2) * Math.sin(deltaLong/2);
+		double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+		double dist = toKM * c * kmToMiles;
 		if (dist < v1.getRadius() && dist < v2.getRadius() && v1.interestedGender.equals(v2.gender) && v2.interestedGender.equals(v1.gender))
 		{
 			//create temporary link and see if it already exists for that user

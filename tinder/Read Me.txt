@@ -1,0 +1,21 @@
+In a world full people just waiting to meet, the tinderverse helps all those blind ships lost at sea find thier perfect match!
+
+Below are the instructions for how to access and utilize this priceless tool of love:
+1) Open the project contained within this zip folder in eclipse
+2) Open the source file titled "myTinderNetwork.java"
+3) Run the program and follow the expertly crafted on-screen instructions
+	-First, search for an existing user in the database by copy/pasting user info into the prompted fields from the 
+	 included "users.json" file
+		*Examine the blazing speed of the algorithm as it displays the time it took to find that user's matches
+	-Next, create/search for the matches of a new user by following the on-screen instructions
+		*Witness the blinding speed as the new user's matches are found by the supperior Tinderverse algorithms
+4)Have fun messing with the radius of the tinderverse users, the new users, and the locations of the new tinderites looking
+  for love.
+
+
+	Thank you so much for being an awesome professor this semester! I came into the class knowing quite a bit about data 
+structures and, despite that, I still feel like I learned so much. I think the fun examples, the interactive class activities,
+and the engaging projects really helped me learn the material. I also really liked that you brought pepper to class on Fridays!
+I hope you have a great winter break and I hope to see you next semester!
+
+									-Shasta
